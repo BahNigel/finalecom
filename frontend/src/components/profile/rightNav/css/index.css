@@ -1,0 +1,171 @@
+/*============features================*/
+/*==================================*/
+.featured{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.featuredInfo{
+    flex: 1;
+    padding: 30px;
+    margin: 0px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px  rgba(71, 71, 71, 0.616);
+}
+
+.featuredContainer{
+    padding: 10px;
+}
+.featuedMoney{
+    font-weight: bold;
+    font-size: 18px;
+}
+.featuredIcon.negative{
+    color: rgb(14, 131, 14);
+    
+}
+/*end----------*/
+
+/*============chart================*/
+/*==================================*/
+.chart{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px  rgba(71, 71, 71, 0.616);
+}
+.chartTitle{
+    margin-bottom: 20px;
+}
+.homeWidgets{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.leftss{
+    position: relative;
+    width: 38%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px  rgba(71, 71, 71, 0.616);
+}
+.right{
+    position: relative;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px  rgba(71, 71, 71, 0.616);
+}
+.widgetsTitle{
+    font-size: 20px;
+    padding: 10px;
+    color: gray;
+    font-weight: 600;
+}
+ul li{
+    list-style: none;
+}
+.widgetList{
+    padding: 15px;
+}
+.widgetItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.widgetItem:hover{
+    background-color: rgba(235, 133, 201, 0.534);
+}
+.widgetUser{
+    display: flex;
+    flex-direction: column;
+}
+.widgetImage{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.widgetUsername{
+    font-weight: 600;
+}
+.widgetTitle{
+    font-weight: 300;
+}
+.widgetButton{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(226, 239, 243);
+    color: gray;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+}
+
+
+.widgetTable{
+    width: 100%;
+    border-spacing: 30px;
+    padding: 5px;
+}
+.widgetTh{
+    text-align: left;
+}
+.widgetTdItem1{
+    display: flex;
+    align-items: center;  
+}
+.widgetRImage{
+    padding-right: 6px;
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.widgetRButton{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(226, 239, 243);
+    color: gray;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.widgetRButton.Aproved{
+    background-color: rgb(196, 235, 196);
+    color:rgb(11, 29, 11);
+}
+.widgetRButton.Declined{
+    background-color: rgb(243, 217, 217);
+    color: rgb(61, 23, 23);
+}
+.widgetRButton.Pending{
+    background-color: rgb(211, 211, 243);
+    color: rgb(21, 21, 43);
+}
+
+.widgetTr:hover{
+    cursor: pointer;
+}
+
+@media (max-width:900px){
+    .homeWidgets{
+        display: block;
+        margin: 20px;
+        padding: 20px;
+        position: relative;
+        justify-content: space-between;
+        border-radius: 10px;
+    }
+    .leftss{
+        width: 100%;
+    }
+   
+}

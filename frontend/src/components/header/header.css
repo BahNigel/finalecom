@@ -1,0 +1,419 @@
+a{   
+    text-decoration: none; 
+    color: black;
+    cursor: pointer;
+}
+a:hover{
+    color: white;
+}
+.marketListItems{
+    margin-top: 20px;
+}
+.headContainer{
+    display: flex;
+    top:0;
+    width: 100%;
+    height: 90px;
+    position:fixed;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 999;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px 10px rgb(179, 179, 179, 0.2);
+}
+
+.logo{
+    text-size-adjust: 20px;
+    color: rgb(64, 64, 104);
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.topNavMenu{
+    text-align: center;
+}
+
+.menuList{
+    list-style: none;
+}
+.menuListItem{
+    padding:20px;
+    text-align: center;
+    float: left;
+    position: relative;
+    height: 40px;
+}
+.menuListItem1{
+    padding:20px;
+    text-align: center;
+    float: left;
+    position: relative;
+    height: 40px;
+}
+
+.menuListItem::after{
+    content: '';
+    position:absolute;
+    height: 80px;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    bottom: 0;
+    transition: transform 0.5s ease-in;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: rgb(51, 204, 153);
+}
+.menuListItem:hover::after{
+    transform: scaleX(100%);
+    transform-origin: left;
+}
+
+.searchBar{
+  background-color: rgb(228, 228, 228);
+  position: relative;
+  height: 40px;
+    transition: transform 0.5s ease-in;
+  top:-9px;
+  justify-content: center;
+  display:flex;
+  align-items: center;
+  border-radius: 40px;
+  width: 40px;
+  cursor: pointer;
+  transition-delay: 0.3s ;
+}
+
+.searchInput{
+    border: rgb(184, 181, 181);
+    border: none;
+    position: relative;
+    background-color: rgb(228, 228, 228);
+    outline: none;
+    border-radius: 40px;
+    color: rgb(173, 173, 173);
+    transition: transform 0.5s ease-in;
+    height: 0px;
+    transition-delay: 0.3s;
+}
+
+.searchButton{
+    font-size: 24px;
+    color:rgb(133, 133, 133);
+    position: relative;
+    width: 20px;
+    transition: transform 0.5s ease-in;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    right: 13px;
+    background-color: rgb(228, 228, 228);
+}
+ .searchBar:hover{
+    width: 180px;
+}
+ .searchBar:hover .searchButton{
+     left: 8px;
+ }
+.searchBar:hover .searchInput{
+    width: 80px;
+    height: 10px;
+}
+.inerSearchButton{
+    position: relative;
+    background-color: rgb(228, 228, 228);
+    border-radius: 50%;
+    top: 3px;
+}
+.container{
+    cursor: pointer;
+    height: 40px;
+}
+/*=======================================*/
+/*=============dropdown area=============*/
+/*=======================================*/
+.dropdownContainer{
+    background-color:white;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    z-index: -1;
+    display: flex;
+    top: 80px;
+    justify-content: center;
+    transition: transform 0.8s ease-in;
+    transform: translatey(-140%);
+}
+.menuListItem:hover .dropdownContainer{
+    transform: translatey(0);
+    border-top: rgb(214, 214, 214) 1px solid;
+}
+
+.dropdownItemContainer-1{
+    width: 20%;
+    top: 10%;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    display: none;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.5s ease-in-out ;
+    border-right: rgb(243, 243, 243) 2px solid ;
+}
+.dropdownItemContainer-1 ul {
+    list-style: none;
+}
+.dropdownItemContainer-1 ul li a {
+    color: rgb(70, 13, 75);
+}
+.dropdownItemContainer-1 ul li a:hover {
+    color: rgb(115, 182, 49);
+}
+
+.dropdownItemContainer-2{
+    width: 20%;
+    top: 10%;
+    display: none;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.5s ease-in-out ;
+    border-right: rgb(243, 243, 243) 2px solid ;
+}
+.dropdownItemContainer-2 ul {
+    list-style: none;
+}
+.dropdownItemContainer-2 ul li a {
+    color: rgb(70, 13, 75);
+}
+.dropdownItemContainer-2 ul li a:hover {
+    color: rgb(115, 182, 49);
+}
+.dropdownItemContainer-3{
+    width: 20%;
+    top: 10%;
+    position: relative;
+    display: none;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.5s ease-in-out ;
+    border-right: rgb(243, 243, 243) 2px solid ;
+}
+.dropdownItemContainer-3 ul {
+    list-style: none;
+}
+.dropdownItemContainer-3 ul li a {
+    color: rgb(70, 13, 75);
+}
+.dropdownItemContainer-3 ul li a:hover {
+    color: rgb(115, 182, 49);
+}
+.dropdownItemContainer-4{
+    width: 20%;
+    top: 10%;
+    position: relative;
+    display: none;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.5s ease-in-out ;
+    border-right: rgb(243, 243, 243) 2px solid ;
+}
+.dropdownItemContainer-4 ul {
+    list-style: none;
+}
+.dropdownItemContainer-4 ul li a {
+    color: rgb(70, 13, 75);
+}
+.dropdownItemContainer-4 ul li a:hover {
+    color: rgb(115, 182, 49);
+}
+.dropdownItemContainer-5{
+    width: 20%;
+    top: 10%;
+    position: relative;
+    display: none;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.5s ease-in-out ;
+    border-right: rgb(243, 243, 243) 2px solid ;
+}
+.dropdownItemContainer-5 ul {
+    list-style: none;
+}
+.dropdownItemContainer-5 ul li a {
+    color: rgb(70, 13, 75);
+}
+.dropdownItemContainer-5 ul li a:hover {
+    color: rgb(115, 182, 49);
+}
+
+/*=============dropdown area=============*/
+
+.menuListItem:hover .dropdownContainer .dropdownItemContainer-1{
+    display: block;
+}
+.menuListItem:hover .dropdownContainer .dropdownItemContainer-2{
+    display: block;
+}
+.menuListItem:hover .dropdownContainer .dropdownItemContainer-3{
+    display: block;
+}
+.menuListItem:hover .dropdownContainer .dropdownItemContainer-4{
+    display: block;
+}
+.menuListItem:hover .dropdownContainer .dropdownItemContainer-5{
+    display: block;
+}
+/*==================profile image===================*/
+.profileImageItem{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+}
+/*ende of profile image*/
+/*chat button*/
+.chartsss{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: -8px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    border-radius: 50%;
+}
+.chatItem{
+    font-size: 30px;
+    left: 5px;
+    position: relative;
+    top: 3px;
+}
+.check{
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    top: -6px;
+    object-fit: contain;
+    left: 15px;
+    color: white;
+    border-radius: 50%;
+    z-index: 444;
+    background-color: green;
+    border: 2px solid rgb(173, 83, 83);
+}
+.profileDropDwon{
+    width: 200px;
+    position: fixed;
+    z-index: 999;
+    transform: translateY(-150%);
+    transition: transform 0.5s ease-in;
+}
+.menuListItem:hover .profileDropDwon{
+    transform: translateY(61px);
+}
+.profileDropbox{
+    width: 200px;
+    right: 60%;
+    position: relative;
+    box-shadow: 4px 4px 5px 6px rgba(128, 128, 128, 0.521);
+}
+.profileDropList{
+    height: 50%;
+    width: 100%;
+}
+.profileDropItem{
+    height: 50px;
+    position: relative;
+    margin-left: -40px;
+    width: 100%;
+}
+
+.signin1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+}
+.login1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.Phone2{
+    display: none;
+}
+/*end chat button*/
+/*-----reaponsive----------*/
+.leftSideNavigation{
+    display: none;
+}
+@media (max-width: 1000px) {
+    .menuListItem{
+        display: none;
+    }
+    .leftSideNavigation{
+        display: block;
+    }
+    .menuListItem1{
+        display: none;
+    }
+}
+
+
+/*end of responsive*/
+/*--------start of side bar-----------*/
+.open{
+    display: none;
+}
+.sideBar.open{
+    display: none;
+}
+.sideBar ul{
+    margin: 30px;
+}
+.sideBar ul li{
+    margin: 35px;
+    cursor: pointer;
+}
+.sideBar ul li .span{
+    margin-right: 15px;
+}
+.leftSideNav:hover .profileLeftNavList{
+    display: block;
+}
+.profileLeftNavList{
+    display: none;
+}
+.sideBar{
+    height: 100vh;
+    width: 300px;
+    font-size: 20px;
+    color: white;
+    display: block;
+    background-color: rgb(2, 2, 36);
+    position: fixed;
+    float: left;
+    left: 0;
+    box-shadow: 60px 100px 6px 100vw rgba(24, 24, 24, 0.486);
+    top: 90px;
+}
+.sideBarContainer{
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    background-color: read;
+}
+/*end of side bar*/

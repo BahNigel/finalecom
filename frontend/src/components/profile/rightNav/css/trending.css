@@ -1,0 +1,26 @@
+.profileList{
+    display: flex;
+    align-items: center;
+}
+.profileImage{
+    height: 40px;
+    width: 40px;
+    margin-right: 6px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.actionButton{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 50px;
+    cursor: pointer;
+    background-color: rgb(220, 255, 226);
+}
+.actionDelete{
+    color: rgb(253, 194, 194);
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 40px;
+}

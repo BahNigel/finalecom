@@ -1,0 +1,58 @@
+.profileContainer{
+    margin: 0;
+    position: relative;
+}
+.leftSidenav{
+    background-color: rgb(45, 92, 95);
+    height: 100vh;
+    position: fixed;
+    width: 20%;
+    padding-top: 120px;
+    color: white;
+}
+.leftSidenav ul li:hover{
+    background-color: white;
+    border-radius: 4px;
+}
+
+.leftSidenav ul li:hover a{
+    color: black;
+}
+.navText.active{
+    background-color: white;
+    border-radius: 4px;
+}
+
+.leftSidenav ul li:hover span{
+    color: black;
+}
+.navText{
+    font-size: 20px;
+    padding: 25px;
+    color: white;
+    font-weight: bold;
+    list-style: none;
+}
+.navText a{
+    color: white;
+}
+.navText span{
+    padding: 20px;
+    color: white;
+}
+.rightSidenav{
+    position: relative;
+    width: 70%;
+    left: 20%;
+    padding: 120px 30px 100px 30px;
+}
+
+@media (max-width: 1200px){
+    .leftSidenav{
+        display: none;
+    }
+    .rightSidenav{
+        width: 100%;
+        left: 0;
+    }
+}

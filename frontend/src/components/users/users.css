@@ -1,0 +1,175 @@
+.usersMainContainer{
+    margin-top: 100px;
+    position: relative;
+    width: 95%;
+    padding: 2%;
+}
+.usersFristContainer{
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+.leftUserscontainer{
+    position: relative;
+    width: 45%;
+    border-radius: 5px;
+    box-shadow: 2px 5px 6px 3px rgba(0, 128, 0, 0.24);
+}
+.rightUserscontainer{
+    position: relative;
+    width: 60%;
+    border-radius: 5px;
+    margin-left: 5%;
+    box-shadow: 2px 5px 6px 3px rgba(0, 128, 0, 0.24);
+}
+.usersSecondContainer{
+    width: 100%;
+    margin-top: 25px;
+}
+.downUserscontainer{
+    position: relative;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 5px 6px 3px rgba(0, 128, 0, 0.24);
+}
+/*=============UserData section start========*/
+.userDatass{
+    width: 100%;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+.profileImageAndData{
+    display: flex;
+    padding: 20px;
+}
+.profileImag{
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+.profileDataAndName{
+    margin-left: 10px;
+}
+.profileTitle{
+    font-weight: 300;
+    color: gray;
+}
+.profileName{
+    font-weight: 600;
+}
+.acoutDitales{
+    padding: 10px 20px;
+}
+.acoutDitalesTitle{
+    color: gray;
+    font-weight: 500;
+}
+.acoutId{
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.idIcon{
+    font-size: 18px;
+    color: gray;
+}
+.idText{
+    margin-left: 15px;
+}
+/*=== end of useData==============*/
+/* ============ user form ==================*/
+
+.userFormss{
+    width: 60%;
+    border-radius: 10px;
+    margin-left: 8px;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+.userFormTitle{
+    font-size: 24px;
+    font-weight: 600;
+}
+.userFormItem{
+    display: none;
+}
+
+.userFormList{
+    padding: 40px 0;
+}
+.userFormLC{
+    padding: 15px 0;
+    width: 250px;
+    border-bottom: 1px solid black;
+}
+.userFormLCLable{
+    top: 10px;
+    position: relative;
+}
+.userFormLC:hover .userFormLCLable{
+    top: 0;
+}
+
+.userFormLC:hover .userFormItem{
+    display: block;
+    border: none;
+    position: relative;
+    top: 14px;
+}
+.fileImage{
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.update{
+    width: 120px;
+    position: relative;
+    top: 180px;
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(67, 36, 109);
+    color: white;
+}
+.file{
+    font-size: 20px;
+    cursor: pointer;
+}
+/*=======end of user form========*/
+/*=======prudoct section ========*/
+.profileList{
+    display: flex;
+    align-items: center;
+}
+.profileImage{
+    height: 40px;
+    width: 40px;
+    margin-right: 6px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.actionButtonss{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(220, 255, 226);
+}
+.actionDelete{
+    color: rgb(253, 194, 194);
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 40px;
+}
+.downUserscontainer{
+    padding: 4px;
+    padding-top: 30px;
+}
+/*============end of prudoct section========*/

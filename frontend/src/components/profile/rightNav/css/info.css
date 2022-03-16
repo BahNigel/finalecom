@@ -1,0 +1,44 @@
+.title{
+    font-size: 25px;
+    font-weight: 600;
+}
+.mainFormContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+.inputForm{
+    display: flex;
+    justify-content: space-between;
+}
+.inputItem{
+    border: 1px solid gray;
+    height: 30px;
+    border-radius: 5px;
+}
+.labelForm{
+    position: relative;
+    bottom: 8px;
+}
+.fromInputContian{
+    padding: 10px;
+}
+.gender{
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+}
+.create{
+    width: 160px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(67, 36, 109);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+.inputItemText{
+    height: 200px;
+    width: 350px;
+}
